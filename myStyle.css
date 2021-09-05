@@ -1,0 +1,229 @@
+:root {
+    --verylightblue: rgb(193, 239, 239);
+    --lightblue: rgb(153, 209, 209);
+    --mediumblue: rgb(113, 179, 179);
+    --darkblue: rgb(73, 149, 149);
+    --verydarkblue: rgb(33, 119, 119);
+    --black: rgb(0, 0, 0);
+    --darkgrey: rgb(51, 51, 51);
+    --grey: rgb(102, 102, 102);
+    --lightgrey: rgb(204, 204, 204);
+    --white: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:400;
+}
+
+h1 {
+    color: var(--verydarkblue);
+    font-size: 32px;
+}
+
+h2 {
+    color: var(--darkblue);
+}
+
+.myWrapper {
+    display: grid;
+    grid-template-columns: 250px auto 25% 25%;
+    grid-template-rows: 80px 50px 80px auto auto auto;
+    grid-template-areas: "banner banner banner banner"
+                        "index index index index"
+                        "pcontents header header header"
+                        "pcontents body body body"
+                        "about about contact contact"
+                        "footer footer footer footer";
+                        
+}
+
+.myBanner {
+    grid-area: banner;
+    background-color: var(--white);
+    position: relative;
+}
+
+#banner_img {
+    width: 450px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+click {
+    font-size: 40px;
+}
+
+#openIndex {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+#closeIndex {
+    position: absolute;
+    left: 260px;
+    top: 15px;
+}
+
+#openContents {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+#closeContents {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.myIndex {
+    grid-area: index;
+    position: sticky;
+    top: 0;
+    background-color: var(--lightblue);
+    color: var(--darkgrey);
+}
+
+.myIndex ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    list-style-type: none;
+}
+
+#option1:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    color: var(--black);
+}
+
+#option2:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    color: var(--black);
+}
+
+#option3:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    color: var(--black);
+}
+
+#option4:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    color: var(--black);
+}
+
+#option5:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    color: var(--black);
+}
+
+.myContents {
+    grid-area: pcontents;
+    background-color: var(--white);
+    padding: 0 10px 0;
+}
+
+.myContents ol {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2.5;
+}
+
+.myHeader {
+    grid-area: header;
+    padding: 0 10px 0;
+}
+
+.myBody {
+    grid-area: body;
+    background-color: var(--white);
+    padding: 0 10px 10px;
+    max-width: 750px;
+    line-height: 1.7;
+}
+
+.myBody h2 {
+    margin: 0;
+}
+
+.myAbout {
+    grid-area: about;
+    background-color: var(--verylightblue);
+    padding: 0 10px 10px;
+}
+
+.myContact {
+    grid-area: contact;
+    background-color: var(--verylightblue);
+    padding: 0 10px 10px;
+}
+
+.myFooter {
+    grid-area: footer;
+    background-color: var(--verydarkblue);
+    color: var(--white);
+    text-align: end;
+    padding: 0 10px 0;
+}
+
+@media (max-width: 750px) {
+
+    .myWrapper {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 80px 80px auto auto auto auto;
+        grid-template-areas: "banner"
+                            "header"
+                            "body"
+                            "about"
+                            "contact"
+                            "footer";
+    }
+
+    #banner_img {
+        width: 70vw;
+        max-width: 450px;
+    }
+
+    .myIndex {
+        position: absolute;
+        text-align: center;
+        width: 300px;
+        height: 320px;
+        opacity: 20%;
+    }
+
+    .myIndex ul {
+        justify-content: inherit;
+        display: block;
+        line-height: 3;
+        padding-top: 30px;
+    }
+
+    #openIndex {
+        position: absolute;
+    }
+
+    #closeIndex {
+        position: absolute;
+    }
+
+    #openContents {
+        position: absolute;
+    }
+
+    #closeContents {
+        position: absolute;
+    }
+}
