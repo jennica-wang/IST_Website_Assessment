@@ -64,6 +64,11 @@ click {
     top: 15px;
 }
 
+#openIndex:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
 #closeIndex {
     position: absolute;
     left: 260px;
