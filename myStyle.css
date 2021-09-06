@@ -26,6 +26,15 @@ h2 {
     color: var(--darkblue);
 }
 
+a:link, a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+click {
+    font-size: 40px;
+}
+
 .myWrapper {
     display: grid;
     grid-template-columns: 250px auto 25% 25%;
@@ -52,10 +61,6 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-click {
-    font-size: 40px;
 }
 
 #openIndex {
@@ -103,46 +108,21 @@ click {
     list-style-type: none;
 }
 
-#option1:hover {
+.myIndex a:hover {
     transform: scale(1.1);
     transition: 0.1s;
-    color: var(--black);
-}
-
-#option2:hover {
-    transform: scale(1.1);
-    transition: 0.1s;
-    color: var(--black);
-}
-
-#option3:hover {
-    transform: scale(1.1);
-    transition: 0.1s;
-    color: var(--black);
-}
-
-#option4:hover {
-    transform: scale(1.1);
-    transition: 0.1s;
-    color: var(--black);
-}
-
-#option5:hover {
-    transform: scale(1.1);
-    transition: 0.1s;
-    color: var(--black);
 }
 
 .myContents {
     grid-area: pcontents;
     background-color: var(--white);
     padding: 0 10px 0;
+    line-height: 40px;
 }
 
-.myContents ol {
-    list-style-type: none;
-    padding: 0;
-    line-height: 2.5;
+.myContents a:hover {
+    transition: 0.1s;
+    font-size: 110%;
 }
 
 .myHeader {
@@ -153,13 +133,26 @@ click {
 .myBody {
     grid-area: body;
     background-color: var(--white);
-    padding: 0 10px 10px;
+    margin: 0 10px 20px;
     max-width: 750px;
     line-height: 1.7;
 }
 
 .myBody h2 {
     margin: 0;
+}
+
+#atom_img {
+    width: 250px;
+    float: left;
+    padding-right: 12px;
+}
+
+.to_top {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--lightblue);
+    padding: 10px 50px 10px;
 }
 
 .myAbout {
@@ -206,7 +199,7 @@ click {
         text-align: center;
         width: 300px;
         height: 320px;
-        opacity: 20%;
+        opacity: 0.1;
     }
 
     .myIndex ul {
