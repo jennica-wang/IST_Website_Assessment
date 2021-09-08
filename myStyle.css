@@ -115,6 +115,10 @@ click {
     line-height: 40px;
 }
 
+.myContents a {
+    display: block;
+}
+
 .myContents a:hover {
     transition: 0.1s;
     font-size: 110%;
@@ -215,6 +219,7 @@ click {
     }
 
     .myContents {
+        background-color: var(--lightblue);
         position: absolute;
         right: 0;
         top: 60px;
