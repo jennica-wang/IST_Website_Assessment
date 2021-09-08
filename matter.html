@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matter</title>
+    <title>Chemistry Education</title>
     <link rel="stylesheet" href="myStyle.css">
     <script type="text/javascript" src="myScript.js" charset="UTF-8"></script>
 </head>
@@ -15,31 +15,29 @@
             <img src="website_banner.jpg" alt="" id="banner_img">
             <click id="openIndex" onClick="openIndexClick()">≡</click>
             <click id="closeIndex" onClick="closeIndexClick()">x</click>
-            <click id="openContents">▼</click>
-            <click id="closeContents">▲</click>
+            <click id="openContents" onClick="openContentsClick()">▼</click>
+            <click id="closeContents" onClick="closeContentsClick()">▲</click>
         </div>
 
         <!-- Index -->
         <div class="myIndex" id="myIndexID">
-            <ul>
                 <a href="http://127.0.0.1:5500/home.html" id="option1">Home</a>
                 <a href="http://127.0.0.1:5500/matter.html" id="option2">Matter</a>
-                <li id="option3">Periodic Table and Trends</li>
-                <li id="option4">Precipitation</li>
-                <li id="option5">Acids, Bases and Indicators</li>
-            </ul>
+                <a href="http://127.0.0.1:5500/periodic_table_and_trends.html" id="option3">Periodic Table and Trends</a>
+                <a href="http://127.0.0.1:5500/precipitation.html" id="option4">Precipitation</a>
+                <a href="http://127.0.0.1:5500/acids_bases_and_indicators.html" id="option5">Acids, Bases and Indicators</a>
         </div>
 
         <!-- Page Contents -->
         <div class="myContents" id="myContentsID">
             <h2>Page Contents</h2>
             <a href="#introduction">Introduction to Chemistry</a>
-            <li>Chemistry and Society</li>
+            <a href="#chemistry_and_society">Chemistry and Society</a>
         </div>
     
         <!-- Page Header -->
         <div class="myHeader">
-            <h1>Matter</h1>
+            <h1>Chemistry</h1>
         </div>
     
         <!-- Body -->
@@ -53,6 +51,9 @@
             <h2>Elements</h2>
             <h2>Compounds</h2>
             <h2>Mixtures</h2>
+            <div class="to_top">
+                <a href="#banner">Return to Top</a>
+            </div>
         </div>
 
         <!-- About Info -->
