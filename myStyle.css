@@ -11,6 +11,7 @@
     --white: rgb(255, 255, 255);
 }
 
+/* Adds space to top when jumping to a section */
 html {
     scroll-padding-top: 45px;
 }
@@ -71,35 +72,35 @@ click {
     position: absolute;
     left: 20px;
     top: 15px;
-}
-
-#openIndex:hover {
-    transform: scale(1.1);
-    transition: 0.1s;
+    display: none;
 }
 
 #closeIndex {
     position: absolute;
-    left: 260px;
-    top: 15px;
+    left: 252px;
+    top: 10px;
+    display: none;
 }
 
 #openContents {
     position: absolute;
     right: 20px;
     top: 15px;
+    display: none;
 }
 
 #closeContents {
     position: absolute;
     right: 20px;
     top: 15px;
+    display: none;
 }
 
 .myIndex {
     grid-area: index;
     background-color: var(--lightblue);
     color: var(--darkgrey);
+    display: inline;
     display: flex;
     justify-content: space-evenly;
     position: sticky;
@@ -223,9 +224,10 @@ click {
         position: absolute;
         text-align: center;
         width: 300px;
-        height: 320px;
-        opacity: 0.2;
+        height: 400px;
         display: block;
+        display: none;
+        z-index: 0;
     }
 
     .myIndex a {
@@ -236,11 +238,22 @@ click {
     }
 
     #openIndex {
-        position: absolute;
+        display: inline;
+    }
+
+        
+    #openIndex:hover {
+        transform: scale(1.1);
+        transition: 0.1s;
     }
 
     #closeIndex {
-        position: absolute;
+        z-index: 100;
+    }
+
+    #closeIndex:hover {
+        transform: scale(1.1);
+        transition: 0.1s;
     }
 
     .myContents {
@@ -264,10 +277,21 @@ click {
 
     #openContents {
         position: absolute;
+        display: inline;
+    }
+
+    #openContents:hover {
+        transform: scale(1.1);
+        transition: 0.1s;
     }
 
     #closeContents {
         position: absolute;
+    }
+
+    #closeContents:hover {
+        transform: scale(1.1);
+        transition: 0.1s;
     }
 
     .myBody {
