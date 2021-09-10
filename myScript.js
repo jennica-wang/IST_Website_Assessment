@@ -13,11 +13,3 @@ function closeIndexClick() {
     document.getElementById("closeIndex").style.display = "none";
     document.getElementById("openIndex").style.display = "inline";
 }
-
-function openContentsClick() {
-    document.getElementById("myContentsID").style.opacity = "100%";
-}
-
-function closeContentsClick() {
-    document.getElementById("myContentsID").style.opacity = "10%";
-}
