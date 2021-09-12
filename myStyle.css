@@ -25,6 +25,7 @@ body {
 h1 {
     color: var(--verydarkblue);
     font-size: 32px;
+    margin-bottom: 0px;
 }
 
 h2 {
@@ -43,7 +44,7 @@ click {
 .myWrapper {
     display: grid;
     grid-template-columns: 210px auto 25% 25%;
-    grid-template-rows: 80px 40px 80px auto auto auto;
+    grid-template-rows: 100px 40px 80px auto auto auto;
     grid-template-areas: "banner banner banner banner"
                         "index index index index"
                         "pcontents header header header"
@@ -60,7 +61,7 @@ click {
 }
 
 #banner_img {
-    width: 450px;
+    width: 600px;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -77,22 +78,8 @@ click {
 
 #closeIndex {
     position: absolute;
-    left: 252px;
+    left: 275px;
     top: 10px;
-    display: none;
-}
-
-#openContents {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    display: none;
-}
-
-#closeContents {
-    position: absolute;
-    right: 20px;
-    top: 15px;
     display: none;
 }
 
@@ -100,6 +87,7 @@ click {
     grid-area: index;
     background-color: var(--lightblue);
     color: var(--darkgrey);
+    font-size: 17px;;
     display: inline;
     display: flex;
     justify-content: space-evenly;
@@ -116,7 +104,7 @@ click {
 .myContents {
     grid-area: pcontents;
     background-color: var(--white);
-    padding: 0 10px 0;
+    padding: 0 20px 0;
     line-height: 40px;
 }
 
@@ -131,13 +119,13 @@ click {
 
 .myHeader {
     grid-area: header;
-    padding: 0 10px 0;
+    padding: 0 20px 0;
 }
 
 .myBody {
     grid-area: body;
     background-color: var(--white);
-    margin: 0 10px 20px;
+    padding: 0 20px 20px;
     max-width: 750px;
     line-height: 1.7;
 }
@@ -176,7 +164,7 @@ click {
 .myAbout {
     grid-area: about;
     background-color: var(--verylightblue);
-    padding: 0 10px 10px;
+    padding: 0 20px 10px;
 }
 
 .myAbout a {
@@ -187,7 +175,7 @@ click {
 .myContact {
     grid-area: contact;
     background-color: var(--verylightblue);
-    padding: 0 10px 10px;
+    padding: 0 20px 10px;
 }
 
 .myFooter {
@@ -198,7 +186,7 @@ click {
     padding: 0 10px 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 840px) {
     .myWrapper {
         display: grid;
         grid-template-columns: 100%;
@@ -214,14 +202,15 @@ click {
 
     #banner_img {
         width: 70vw;
-        max-width: 450px;
+        max-width: 500px;
     }
 
     .myIndex {
         position: absolute;
         text-align: center;
-        width: 300px;
-        height: 400px;
+        width: 220px;
+        padding: 10px 70px 0px 30px;
+        height: 415px;
         display: block;
         display: none;
         z-index: 0;
@@ -254,6 +243,6 @@ click {
     }
 
     .myContents {
-        padding-bottom: 20px;
+        padding-bottom: 16px;
     }
 }

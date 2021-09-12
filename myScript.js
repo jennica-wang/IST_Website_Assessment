@@ -1,7 +1,3 @@
-function hideBannerClick() {
-    document.getElementById("banner_img").style.opacity = "0%"
-}
-
 function openIndexClick() {
     document.getElementById("myIndexID").style.display = "inline";
     document.getElementById("closeIndex").style.display = "inline";
