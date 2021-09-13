@@ -13,7 +13,7 @@
 
 /* Adds space to top when jumping to a section */
 html {
-    scroll-padding-top: 45px;
+    scroll-padding-top: 40px;
 }
 
 /* Font style */
@@ -43,7 +43,7 @@ click {
 
 .myWrapper {
     display: grid;
-    grid-template-columns: 215px auto 25vw 25vw;
+    grid-template-columns: 205px auto 25vw 25vw;
     grid-template-rows: 100px 40px 80px auto auto auto;
     grid-template-areas: "banner banner banner banner"
                         "index index index index"
@@ -108,13 +108,16 @@ click {
     line-height: 25px;
 }
 
+.myContents h2 {
+    padding-top: 8px;
+}
 .myContents a {
     display: block;
 }
 
 .myContents a:hover {
     transition: 0.1s;
-    transform: scale(1.05);
+    transform: scale(1.05) translateX(2px);
 }
 
 .myHeader {
@@ -191,7 +194,7 @@ click {
 
 @media (max-width: 840px) {
     html {
-        scroll-padding-top: 5px;
+        scroll-padding-top: 0px;
     }
 
     .myWrapper {
