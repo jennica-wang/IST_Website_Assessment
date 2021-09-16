@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Education</title>
+    <link rel="stylesheet" href="myStyle.css">
+    <script type="text/javascript" src="myScript.js" charset="UTF-8"></script>
+</head>
+<body>
+    <div class="myWrapper">
+        <!-- Banner -->
+        <div class="myBanner" id="banner">
+            <img src="images/website_banner.jpg" alt="" id="banner_img" onClick="hideBannerClick()">
+            <click id="openIndex" onClick="openIndexClick()">≡</click>
+            <click id="closeIndex" onClick="closeIndexClick()">x</click>
+        </div>
+
+        <!-- Index -->
+        <div class="myIndex" id="myIndexID">
+            <a href="http://127.0.0.1:5500/home.html" id="option1">Home</a>
+            <a href="http://127.0.0.1:5500/matter.html" id="option2">Matter</a>
+            <a href="http://127.0.0.1:5500/periodic_table.html" id="option3">Periodic Table</a>
+            <a href="http://127.0.0.1:5500/periodic_trends.html" id="option4"> Periodic Trends</a>
+            <a href="http://127.0.0.1:5500/precipitation.html" id="option5">Precipitation</a>
+            <a href="http://127.0.0.1:5500/acids_bases_and_indicators.html" id="option6">Acids, Bases and Indicators</a>
+        </div>
+
+        <!-- Page Contents -->
+        <div class="myContents">
+            <h2>Page Contents</h2>
+            <a href="#acids">Acids</a>
+            <br>
+            <a href="#bases">Bases</a>
+            <br>
+            <a href="#alkalis">Alkalis</a>
+            <br>
+            <a href="#ph_indicators">pH and Indicators</a>
+            <br>
+            <a href="#neutralisation">Neutralisation</a>
+        </div>
+    
+        <!-- Page Header -->
+        <div class="myHeader">
+            <h1>Periodic Trends</h1>
+        </div>
+    
+        <!-- Body -->
+        <div class="myBody">
+            <h2 id="acids">Acids</h2>
+            <p>Acids are compounds which separate in water to form hydrogen ions, H+ (they “ionise”).  How strong an acid solution is, has to do with the number of (concentration) H+ ions in the solution. The greater the H+ concentration, the stronger the acid. Example: HCl (hydrochloric acid) in water.</p>
+            <p>Examples: Hydrochloric acid (found in stomach acid), vinegar, citrus juice, coffee/tea, carbonated soft drinks.</p>
+            <h2 id="bases">Bases</h2>
+            <p>Bases substances which neutralise acids. They are usually ionic compounds, metal hydroxides, that separate in water to form a negatively charged hydroxide ion (OH-) and positively charged metal ion. The strength of a base is determined by the concentration of hydroxide ions (OH-). The greater the concentration of OH- ions the stronger the base.</p>
+            <p>Examples: NaOH (sodium hydroxide) in water, ammonia, bleach, soap, toothpaste, cleaning agents.</p>
+            <h2 id="alkalis">Alkalis</h2>
+            <p>Water soluble bases are called alkalis. An alkali is a water-soluble base. All alkalis are bases, but not all bases are alkalis.</p>
+            <p>Examples: Lithium, sodium, potassium, rubidium, cesium.</p>
+            <h2 id="ph_indicators">pH and Indicators</h2>
+            <p>pH is a measure of how acidic/basic a substance is. The range goes from 0 - 14, with 7 being neutral. pHs of less than 7 indicate acidity, whereas a pH of greater than 7 indicates a base. pH is really a measure of the relative amount of free hydrogen and hydroxyl ions are in the substance. Substanes that have more free hydrogen ions are acidic, whereas substances that have more free hydroxyl ions are basic. Since pH can be affected by chemicals in the substance, pH is an important indicator of chemical changes in a substance. pH is reported in "logarithmic units". Each number represents a 10-fold change in the acidity/basicness of the substance.</p>
+            <p>A pH indicator is a halochromic chemical compound added in small amounts to a solution so the pH of the solution can be determined visually. The indicator causes the color of the solution to change depending on the pH. pH indicators are used to determine the extent of a chemical reaction. Because of the subjective choice of colour, pH indicators are susceptible to imprecise readings. For applications requiring precise measurement of pH, a pH meter is frequently used. Sometimes, a blend of different indicators is used to achieve several smooth color changes over a wide range of pH values. The Universal Indicator is a pH indicator which has colour changes over a wide range of pH values. After adding universal indicator, the colours which indicate the pH of a solution, are:</p>
+            <table>
+                <tr>
+                  <th>pH range</th>
+                  <th>Description</th>
+                  <th>Colour</th>
+                </tr>
+                <tr>
+                  <td>Less than 3</td>
+                  <td>Strong acid</td>
+                  <td id="td_red">Red</td>
+                </tr>
+                <tr>
+                  <td>3-6</td>
+                  <td>Weak acid</td>
+                  <td id="td_orange_or_yellow">Orange or Yellow</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Neutral</td>
+                    <td id="td_green">Green</td>
+                </tr>
+                <tr>
+                    <td>8-11</td>
+                    <td>Weak alkali</td>
+                    <td id="td_blue">Blue</td>
+                </tr>
+                <tr>
+                    <td>More than 11</td>
+                    <td>Strong alkali</td>
+                    <td id="td_purple">Purple</td>
+                </tr>
+            </table>
+            <br>
+            <h2 id="neutralisation">Neutralisation</h2>
+            </p>When an acid and a base are mixed together, a chemical reaction occurs. This reaction is called neutralisation. If precise quantities of acid and base are added together, a neutral solution can be made. Neutralisation is an exothermic reaction, so during the reaction, the mixture warms up. Neutralisation is used in multiple ways, including:</p>
+            <ul id="neutralisation_list">
+                <li>Farmers use lime (calcium oxide) to neutralise acid soils.</li>
+                <li>Hydrochloric acid is found in your stomach. If there is too much, it can cause indigestion. Some people use antacid tablets which contain bases such as magnesium hydroxide and magnesium carbonate to neutralise the extra acid.</li>
+                <li>Bee stings are acidic. They can be neutralised using baking powder, which contains sodium hydrogen carbonate.</li>
+            </ul>
+            <br>
+            <div class="to_top">
+                <a href="#banner">Return to Top</a>
+            </div>
+        </div>
+
+        <!-- About Info -->
+        <div class="myAbout">
+            <h2>About Us</h2>
+            <p>Chemistry Education is a group of science educators established in 2021. We aim to improve society's knowledge about science, specifically through the teachings of Chemistry. We want to provide an easily accessible online learning platform for individuals across the globe. We hope to educate the future about Chemistry. If you have any questions, please feel free to contact us!</p>
+        </div>
+    
+        <!-- Contact Info -->
+        <div class="myContact">
+            <h2>Contact Us</h2>
+            <p>Email: chemistry.education@learning.edu.au</p>
+            <p>Phone: 0123-456-789</p>
+            <p>Mail: 123 Sydney Street, NSW 2000 Australia</p>
+            <p>Facebook: @Chemistry_Education</p>
+            <p>Twitter: @Chemistry_Education</p>
+            <p>Instagram: @Chemistry_Education</p>
+        </div>
+    
+        <!-- Footer -->
+        <div class="myFooter">
+            <p>Copyright ChemistryEducation 2021</p>
+        </div>
+    </div class="myWrapper">
+</body>
+</html>
