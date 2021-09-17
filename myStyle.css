@@ -167,8 +167,30 @@ click {
     width: 100%;
 }
 
-#periodic_table {
+#periodic_table_img {
     width: 100%;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: var(--black);
+    border-width: 1px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+#term_definition {
+    text-align: left;
+}
+
+#universal_indicator {
+    text-align: center;
 }
 
 #td_red {
@@ -191,24 +213,9 @@ click {
     background-color: var(--purple);
 }
 
-table {
-    text-align: center;
-    border-spacing: 0;
-    width: 100%;
-    border-style: solid;
-    border-color: var(--black);
-    border-width: 1px;
-}
-
-th, td {
-    border-style: solid;
-    border-width: 1px;
-}
-
 #neutralisation_list {
     list-style-type: circle;
 }
-
 
 .to_top {
     background-color: var(--lightblue);
