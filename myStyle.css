@@ -51,6 +51,20 @@ click {
     font-size: 40px;
 }
 
+table {
+    border-spacing: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: var(--black);
+    border-width: 1px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
 .myWrapper {
     display: grid;
     grid-template-columns: 205px auto 25vw 25vw;
@@ -147,10 +161,12 @@ click {
     margin: 0;
 }
 
+/* Home Page */
 #introduction_list {
     list-style-type: circle;
 }
 
+/* Matter */
 #atom_img {
     width: 250px;
     float: left;
@@ -167,28 +183,29 @@ click {
     width: 100%;
 }
 
+/* Periodic Table */
 #periodic_table_img {
     width: 100%;
 }
 
-table {
-    border-spacing: 0;
-    width: 100%;
-    border-style: solid;
-    border-color: var(--black);
-    border-width: 1px;
+/* Precipitation */
+#chemical_reactions_list {
+    list-style-type: circle;
 }
 
-th, td {
-    border-style: solid;
-    border-width: 1px;
-    padding: 5px;
+#state_symbols_list {
+    list-style-type: circle;
 }
 
 #term_definition {
     text-align: left;
 }
 
+#precipitation_reaction_formula {
+    text-align: center;
+}
+
+/* Acids, Bases and Indicators */
 #universal_indicator {
     text-align: center;
 }
