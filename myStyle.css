@@ -68,7 +68,7 @@ th, td {
 
 .myWrapper {
     display: grid;
-    grid-template-columns: 205px auto 25vw 25vw;
+    grid-template-columns: 203px auto 25vw 25vw;
     grid-template-rows: 100px 40px 80px auto auto auto;
     grid-template-areas: "banner banner banner banner"
                         "index index index index"
@@ -94,20 +94,6 @@ th, td {
     transform: translate(-50%, -50%);
 }
 
-#openIndex {
-    position: absolute;
-    left: 20px;
-    top: 25px;
-    display: none;
-}
-
-#closeIndex {
-    position: absolute;
-    left: 275px;
-    top: 10px;
-    display: none;
-}
-
 .myIndex {
     grid-area: index;
     background-color: var(--lightblue);
@@ -126,6 +112,20 @@ th, td {
     transition: 0.1s;
 }
 
+#openIndex {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    display: none;
+}
+
+#closeIndex {
+    position: absolute;
+    left: 265px;
+    top: 10px;
+    display: none;
+}
+
 .myContents {
     grid-area: pcontents;
     background-color: var(--white);
@@ -138,11 +138,12 @@ th, td {
 }
 .myContents a {
     display: block;
+    width: fit-content;
 }
 
 .myContents a:hover {
     transition: 0.1s;
-    transform: scale(1.05) translateX(2%);
+    transform: scale(1.05);
 }
 
 .myHeader {
@@ -291,8 +292,7 @@ th, td {
 
     .myIndex {
         position: absolute;
-        text-align: center;
-        width: 220px;
+        width: 210px;
         padding: 35px 70px 0px 30px;
         height: 380px;
         display: none;
@@ -303,6 +303,7 @@ th, td {
         justify-content: inherit;
         display: block;
         line-height: 3.5;
+        width: fit-content;
     }
 
     #openIndex {
@@ -316,6 +317,7 @@ th, td {
 
     #closeIndex {
         z-index: 100;
+        display: none;
     }
 
     #closeIndex:hover {
