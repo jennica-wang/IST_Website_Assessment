@@ -256,15 +256,28 @@ th, td {
     padding: 0 20px 10px;
 }
 
+.start {
+    text-align: start;
+    float: left;
+}
+.end {
+    text-align: end;
+    float: right;
+}
+
 .myFooter {
     grid-area: footer;
     background-color: var(--verydarkblue);
-    text-align: end;
     padding: 0 10px 0;
 }
 
 .myFooter p {
     color: var(--white);
+}
+
+.myFooter a:link, a:visited, a:hover, a:active {
+    color: var(--verylightblue);
+    text-decoration: underline;
 }
 
 @media (max-width: 840px) {
