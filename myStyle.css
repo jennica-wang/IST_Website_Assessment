@@ -48,10 +48,6 @@ a:link, a:visited {
     text-decoration: inherit;
 }
 
-click {
-    font-size: 40px;
-}
-
 table {
     border-spacing: 0;
     width: 100%;
@@ -117,6 +113,8 @@ th, td {
     left: 20px;
     top: 25px;
     display: none;
+    font-size: 40px;
+    margin: 0;
 }
 
 #closeIndex {
@@ -124,6 +122,8 @@ th, td {
     left: 265px;
     top: 10px;
     display: none;
+    font-size: 40px;
+    margin: 0;
 }
 
 .myContents {
