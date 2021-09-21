@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Storyboard</title>
+    <link rel="stylesheet" href="../myStyle.css">
+    <script type="text/javascript" src="../myScript.js" charset="UTF-8"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon//favicon-16x16.png">
+    <link rel="manifest" href="../favicon//site.webmanifest">
 </head>
 <body>
-    storyboard wooooooo
+    <div class="myWrapper">
+        <!-- Banner -->
+        <div class="myBanner" id="banner">
+            <img src="../images/website_banner.jpg" alt="" id="banner_img" onClick="hideBannerClick()">
+            <p id="openIndex" onClick="openIndexClick()">≡</p>
+            <p id="closeIndex" onClick="closeIndexClick()">x</p>
+        </div>
+    
+        <!-- Index -->
+        <div class="myIndex" id="myIndexID">
+            <a href="https://jennica-wang.github.io/IST_Website_Assessment/html/home.html" id="option1">Home</a>
+            <a href="https://jennica-wang.github.io/IST_Website_Assessment/html/matter.html" id="option2">Matter</a>
+            <a href="https://jennica-wang.github.io/IST_Website_Assessment/html/periodic_table.html" id="option3">Periodic Table</a>
+            <a href="https://jennica-wang.github.io/IST_Website_Assessment/html/periodic_trends.html" id="option4"> Periodic Trends</a>
+            <a href="https://jennica-wang.github.io/IST_Website_Assessment/html/precipitation.html" id="option5">Precipitation</a>
+            <a href="https://jennica-wang.github.io/IST_Website_Assessment/html/acids_bases_indicators.html" id="option6">Acids, Bases and Indicators</a>
+        </div>
+    </div>
 </body>
 </html>
