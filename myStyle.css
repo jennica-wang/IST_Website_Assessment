@@ -72,7 +72,6 @@ th, td {
                         "pcontents body body body"
                         "about about contact contact"
                         "footer footer footer footer";
-                        
 }
 
 .myBanner {
@@ -280,6 +279,18 @@ th, td {
     text-decoration: underline;
 }
 
+#myStoryboardWrapper {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100px 40px 80px auto auto auto;
+    grid-template-areas: "banner banner"
+                        "index index"
+                        "header header"
+                        "body body"
+                        "about contact"
+                        "footer footer";
+}
+
 @media (max-width: 840px) {
     html {
         scroll-padding-top: 0px;
@@ -288,7 +299,7 @@ th, td {
     .myWrapper {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 70px auto auto auto auto;
+        grid-template-rows: 100px 80px auto auto auto auto;
         grid-template-areas: "banner"
                             "header"
                             "pcontents"
@@ -341,5 +352,17 @@ th, td {
     .myContents {
         padding-bottom: 16px;
         width: fit-content;
+    }
+
+    #myStoryboardWrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 80px auto auto auto;
+        grid-template-areas: "banner"
+                            "header"
+                            "body"
+                            "about"
+                            "contact"
+                            "footer";
     }
 }
