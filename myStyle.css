@@ -275,7 +275,7 @@ th, td {
     color: var(--white);
 }
 
-.myFooter a:link, a:visited, a:hover, a:active {
+.myFooter a {
     color: var(--verylightblue);
     text-decoration: underline;
 }
