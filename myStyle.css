@@ -1,13 +1,10 @@
+/* Define colours */
 :root {
     --verylightblue: rgb(193, 239, 239);
     --lightblue: rgb(153, 209, 209);
-    --mediumblue: rgb(113, 179, 179);
     --darkblue: rgb(73, 149, 149);
     --verydarkblue: rgb(33, 119, 119);
     --black: rgb(0, 0, 0);
-    --darkgrey: rgb(51, 51, 51);
-    --grey: rgb(102, 102, 102);
-    --lightgrey: rgb(204, 204, 204);
     --white: rgb(255, 255, 255);
     --red: rgb(255, 60, 60);
     --orange: rgb(255, 180, 35);
@@ -16,38 +13,44 @@
     --purple: rgb(220, 55, 230);
 }
 
-/* Adds space to top when jumping to a section */
+/* Adds space for sticky index at the top when jumping to a section */
 html {
     scroll-padding-top: 40px;
 }
 
-/* General styling */
+/* Margin and font style of text */
 body {
     margin: 0px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--white);
 }
 
+/* Text colour and size, and margin of heading 1 */
 h1 {
     color: var(--verydarkblue);
     font-size: 32px;
     margin-bottom: 0px;
 }
 
+/* Text colour and size of heading 2 */
 h2 {
     color: var(--darkblue);
     font-size: 24px;
 }
 
+/* Text colour and size of paragraphs */
 p {
     color: var(--black);
     font-size: 16px;
 }
 
+/* Sets colour to the same as parent element, and sets text decoration (line, colour, style) to the same as parent element */
 a:link, a:visited {
     color: inherit;
     text-decoration: inherit;
 }
 
+/* No distance between borders, width is 100% of parent element, and solid, black, and 1px thick table border */
 table {
     border-spacing: 0;
     width: 100%;
@@ -56,30 +59,33 @@ table {
     border-width: 1px;
 }
 
+/* Solid, 1px thick border, and space betweeen cell contents and border */
 th, td {
     border-style: solid;
     border-width: 1px;
     padding: 5px;
 }
 
+/* Grid layout */
 .myWrapper {
     display: grid;
     grid-template-columns: 203px auto 25vw 25vw;
     grid-template-rows: 100px 40px 80px auto auto auto;
     grid-template-areas: "banner banner banner banner"
                         "index index index index"
-                        "pcontents header header header"
-                        "pcontents body body body"
+                        "navigation header header header"
+                        "navigation body body body"
                         "about about contact contact"
                         "footer footer footer footer";
 }
 
+/* Position an element based on its normal position */
 .myBanner {
     grid-area: banner;
-    background-color: var(--white);
     position: relative;
 }
 
+/* Width and margin of image, and positions image at the center (horizontally and vertically) of banner */
 #banner_img {
     width: 600px;
     margin: 0;
@@ -89,12 +95,11 @@ th, td {
     transform: translate(-50%, -50%);
 }
 
+/* Background colour, text size, sticky top index bar, vertically center */
 .myIndex {
     grid-area: index;
     background-color: var(--lightblue);
-    color: var(--darkgrey);
     font-size: 17px;
-    display: block;
     display: flex;
     justify-content: space-evenly;
     position: sticky;
@@ -102,11 +107,13 @@ th, td {
     align-items: center;
 }
 
+/* Enlargens when hovered over */
 .myIndex a:hover {
     transform: scale(1.1);
     transition: 0.1s;
 }
 
+/* Position of open index button, text size, and margin */
 #openIndex {
     position: absolute;
     left: 20px;
@@ -116,6 +123,7 @@ th, td {
     margin: 0;
 }
 
+/* Position of close index button, size, and margin */
 #closeIndex {
     position: absolute;
     left: 265px;
@@ -125,92 +133,105 @@ th, td {
     margin: 0;
 }
 
-.myContents {
-    grid-area: pcontents;
-    background-color: var(--white);
+/* Space on sides, and line height */
+.myNavigation {
+    grid-area: navigation;
     padding: 0 20px 0;
     line-height: 25px;
 }
 
-.myContents h2 {
+/* Adds space above heading */
+.myNavigation h2 {
     padding-top: 8px;
 }
-.myContents a {
+
+/* Each link starts on a new line, clickable area is the width of the text, and larger font size */
+.myNavigation a {
     display: block;
     width: fit-content;
+    font-size: 17px;
 }
 
-.myContents a:hover {
+/* Enlargens when hovered over */
+.myNavigation a:hover {
     transition: 0.1s;
     transform: scale(1.05);
 }
 
+/* Adds space to sides of header */
 .myHeader {
     grid-area: header;
     padding: 0 20px 0;
 }
 
+/* Adds space to side and bottom, sets maximum width and adds gap on right side of content, and line height */
 .myBody {
     grid-area: body;
-    background-color: var(--white);
     padding: 0 20px 20px;
     max-width: 750px;
     line-height: 1.7;
 }
 
+/* Removes space around heading 2s in body */
 .myBody h2 {
     margin: 0;
 }
 
-/* Home Page */
+/* Circle list style */
 #introduction_list {
     list-style-type: circle;
 }
 
-/* Matter */
+/* Image width, position on page, and adds space to the right */
 #atom_img {
     width: 250px;
     float: left;
     padding-right: 12px;
 }
 
+/* Image width, position on page, and adds space to top and sides */
 #element_img {
     width: 300px;
     float: right;
     padding: 10px 12px 0px;
 }
 
+/* Image width is the same as the body */
 #element_compound_mixture_img {
     width: 100%;
 }
 
-/* Periodic Table */
+/* Image width is the same as the body */
 #periodic_table_img {
     width: 100%;
 }
 
-/* Precipitation */
+/* Circle list style */
 #chemical_reactions_list {
     list-style-type: circle;
 }
 
+/* Circle list style */
 #state_symbols_list {
     list-style-type: circle;
 }
 
+/* Positions table headers on the left instead of center */
 #term_definition {
     text-align: left;
 }
 
+/* Positions text in the center */
 #precipitation_reaction_formula {
     text-align: center;
 }
 
-/* Acids, Bases and Indicators */
+/* Positions text in the center */
 #universal_indicator {
     text-align: center;
 }
 
+/* Colours of table cells */
 #td_red {
     background-color: var(--red);
 }
@@ -231,54 +252,65 @@ th, td {
     background-color: var(--purple);
 }
 
+/* Circle list style */
 #neutralisation_list {
     list-style-type: circle;
 }
 
+/* Background colour, text colour, space between text and button edge, width of button, and space between button and content*/
 .to_top {
     background-color: var(--darkblue);
     color: var(--white);
-    padding: 10px 50px 10px;
+    padding: 10px 50px;
     width: 100px;
     margin-top: 40px;
 }
 
+/* Background colour, and space on the side and bottom */
 .myAbout {
     grid-area: about;
     background-color: var(--verylightblue);
     padding: 0 20px 10px;
 }
 
+/* Background colour, and space on the side and bottom */
 .myContact {
     grid-area: contact;
     background-color: var(--verylightblue);
     padding: 0 20px 10px;
 }
 
+/* Position text on the left */
 .start {
     text-align: start;
     float: left;
 }
+
+/* Position text on the right */
 .end {
     text-align: end;
     float: right;
 }
 
+/* Background colour, and adds space on sides */
 .myFooter {
     grid-area: footer;
     background-color: var(--verydarkblue);
     padding: 0 10px 0;
 }
 
+/* Text colour */
 .myFooter p {
     color: var(--white);
 }
 
+/* Text colour, and underline */
 .myFooter a {
     color: var(--verylightblue);
     text-decoration: underline;
 }
 
+/* Storyboard grid layout */
 #myStoryboardWrapper {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -291,82 +323,96 @@ th, td {
                         "footer footer";
 }
 
+/* Body width is the same as view size */
 #storyboard_body {
     max-width: none;
 }
 
+/* Text colour, and underline */
 #storyboard_body a {
     color: var(--darkblue);
     text-decoration: underline;
 }
 
+/* Size of image */
 #storyboard_body img {
     width: 100%;
 }
 
-@media (max-width: 803px) {
+/* Styling is applied if the view size is under 823px */
+@media (max-width: 823px) {
+    /* Removes the space for at the top when jumping to a section */
     html {
         scroll-padding-top: 0px;
     }
 
+    /* Grid layout */
     .myWrapper {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 100px 80px auto auto auto auto;
         grid-template-areas: "banner"
                             "header"
-                            "pcontents"
+                            "navigation"
                             "body"
                             "about"
                             "contact"
                             "footer";
     }
 
+    /* Adjustable image size */
     #banner_img {
         width: 70vw;
         max-width: 600px;
     }
 
+    /* Positions index in top left, dimensions of box, adds space, the index is not shown, and lower priority than close index button */
     .myIndex {
         position: absolute;
         width: 210px;
-        padding: 35px 70px 0px 30px;
         height: 380px;
+        padding: 35px 70px 0px 30px;
         display: none;
         z-index: 0;
     }
 
+    /* Each link starts on a new line, line height, and clickable area is the width of the text */
     .myIndex a {
-        justify-content: inherit;
         display: block;
         line-height: 3.5;
         width: fit-content;
     }
 
+    /* Open index button is shown */
     #openIndex {
         display: inline;
     }
     
+    /* Enlargens when hovered over */
     #openIndex:hover {
         transform: scale(1.1);
         transition: 0.1s;
     }
 
+    /* Priority over index, and is not shown */
     #closeIndex {
         z-index: 100;
         display: none;
     }
 
+    /* Enlargens when hovered over */
     #closeIndex:hover {
         transform: scale(1.1);
         transition: 0.1s;
     }
 
-    .myContents {
+    /* Adds space at bottom, and clickable area is the width of the text */
+    .myNavigation {
         padding-bottom: 16px;
         width: fit-content;
     }
 
+    /* Storyboard grid layout */
     #myStoryboardWrapper {
         display: grid;
         grid-template-columns: 100%;
