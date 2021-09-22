@@ -281,7 +281,7 @@ th, td {
 
 #myStoryboardWrapper {
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 100px 40px 80px auto auto auto;
     grid-template-areas: "banner banner"
                         "index index"
@@ -291,7 +291,20 @@ th, td {
                         "footer footer";
 }
 
-@media (max-width: 840px) {
+#storyboard_body {
+    max-width: none;
+}
+
+#storyboard_body a {
+    color: var(--darkblue);
+    text-decoration: underline;
+}
+
+#storyboard_body img {
+    width: 100%;
+}
+
+@media (max-width: 803px) {
     html {
         scroll-padding-top: 0px;
     }
