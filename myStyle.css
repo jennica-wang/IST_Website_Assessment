@@ -2,6 +2,7 @@
 :root {
     --verylightblue: rgb(193, 239, 239);
     --lightblue: rgb(153, 209, 209);
+    --mediumblue: rgb(113, 179, 179);
     --darkblue: rgb(73, 149, 149);
     --verydarkblue: rgb(33, 119, 119);
     --black: rgb(0, 0, 0);
@@ -275,10 +276,15 @@ th, td {
     list-style-type: circle;
 }
 
-/* Background colour, and space between text and button edge */
+/* Background colour, and space between text and edges */
 .to_top {
     background-color: var(--lightblue);
     padding: 10px 50px;
+}
+
+/* Change background colour when hovered over */
+.to_top:hover {
+    background-color: var(--mediumblue);
 }
 
 /* Background colour, and space on the side and bottom */
