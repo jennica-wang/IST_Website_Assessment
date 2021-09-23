@@ -6,11 +6,11 @@
     --verydarkblue: rgb(33, 119, 119);
     --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
-    --red: rgb(255, 60, 60);
-    --orange: rgb(255, 180, 35);
-    --green: rgb(65, 185, 65);
-    --blue: rgb(90, 125, 210);
-    --purple: rgb(220, 55, 230);
+    --red: rgb(255, 40, 40);
+    --orange: rgb(255, 170, 45);
+    --green: rgb(40, 215, 40);
+    --blue: rgb(40, 90, 225);
+    --purple: rgb(165, 50, 205);
 }
 
 /* Adds space for sticky index at the top when jumping to a section */
@@ -231,9 +231,11 @@ th, td {
     text-align: center;
 }
 
-/* Colours of table cells */
+/* Colours of table cells' background, text, and border */
 #td_red {
     background-color: var(--red);
+    color: var(--white);
+    border-color: var(--black);
 }
 
 #td_orange_or_yellow {
@@ -246,10 +248,14 @@ th, td {
 
 #td_blue {
     background-color: var(--blue);
+    color: var(--white);
+    border-color: var(--black);
 }
 
 #td_purple {
     background-color: var(--purple);
+    color: var(--white);
+    border-color: var(--black);
 }
 
 /* Circle list style */
@@ -339,7 +345,7 @@ th, td {
     width: 100%;
 }
 
-/* Styling is applied if the view size is under 823px */
+/* Styling is applied if the view size is under 823px, this is for smaller screens */
 @media (max-width: 823px) {
     /* Removes the space for at the top when jumping to a section */
     html {
@@ -423,5 +429,26 @@ th, td {
                             "about"
                             "contact"
                             "footer";
+    }
+}
+
+/* Styling is applied if the view size is above 1500px, this is for larger screens */
+@media (min-width: 1500px) {
+    /* Grid layout, the navigation changes size when view size changes */
+    .myWrapper {
+        display: grid;
+        grid-template-columns: 20vw auto 25vw 25vw;
+        grid-template-rows: 100px 40px 80px auto auto auto;
+        grid-template-areas: "banner banner banner banner"
+                            "index index index index"
+                            "navigation header header header"
+                            "navigation body body body"
+                            "about about contact contact"
+                            "footer footer footer footer";
+    }
+
+    /* The body content is 60% of the view width, there is a 20% gap on the right, placing the body content in the center */
+    .myBody {
+        max-width: 60vw;
     }
 }
