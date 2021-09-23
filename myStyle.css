@@ -7,11 +7,11 @@
     --verydarkblue: rgb(33, 119, 119);
     --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
-    --red: rgb(255, 40, 40);
+    --red: rgb(245, 30, 30);
     --orange: rgb(255, 170, 45);
-    --green: rgb(40, 215, 40);
-    --blue: rgb(40, 90, 225);
-    --purple: rgb(165, 50, 205);
+    --green: rgb(55, 215, 55);
+    --blue: rgb(40, 100, 215);
+    --purple: rgb(170, 60, 205);
 }
 
 /* Adds space for sticky index at the top when jumping to a section */
