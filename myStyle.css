@@ -182,6 +182,7 @@ th, td {
     list-style-type: circle;
 }
 
+/* Background colour, gap between text and shape edge, space between each shape, and each link starts on a new line */
 .learn {
     background-color: var(--verylightblue);
     padding: 7px 15px;
