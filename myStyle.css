@@ -182,6 +182,17 @@ th, td {
     list-style-type: circle;
 }
 
+.learn {
+    background-color: var(--verylightblue);
+    padding: 7px 15px;
+    margin: 12px auto 16px;
+    display: block;
+}
+
+.learn:hover {
+    background-color: var(--lightblue);
+}
+
 /* Image width, position on page, and adds space to the right */
 #atom_img {
     width: 250px;
@@ -263,13 +274,10 @@ th, td {
     list-style-type: circle;
 }
 
-/* Background colour, text colour, space between text and button edge, width of button, and space between button and content*/
+/* Background colour, and space between text and button edge */
 .to_top {
-    background-color: var(--darkblue);
-    color: var(--white);
+    background-color: var(--lightblue);
     padding: 10px 50px;
-    width: 100px;
-    margin-top: 40px;
 }
 
 /* Background colour, and space on the side and bottom */
